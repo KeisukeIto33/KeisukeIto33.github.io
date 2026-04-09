@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>伊藤 ○○ - 日本語</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', 'Google Sans', 'Segoe UI', Roboto, Arial, sans-serif;
+    color: #202124;
+    background: #fff;
+    line-height: 1.9;
+    font-size: 15px;
+  }
+
+  /* ── Navigation ── */
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 48px;
+    border-bottom: 1px solid #e0e0e0;
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  nav .site-name {
+    font-size: 22px;
+    font-weight: 400;
+    color: #202124;
+    text-decoration: none;
+  }
+  nav .nav-links { display: flex; gap: 32px; }
+  nav .nav-links a {
+    text-decoration: none;
+    color: #202124;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 4px 0;
+    transition: color 0.2s;
+  }
+  nav .nav-links a:hover { color: #1a73e8; }
+  nav .nav-links a.active {
+    color: #1a73e8;
+    border-bottom: 2px solid #1a73e8;
+  }
+
+  /* ── Main Content ── */
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px 48px;
+  }
+  .page-title {
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 32px;
+    color: #202124;
+  }
+  .section {
+    margin-bottom: 36px;
+  }
+  .section-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #202124;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  .section p, .section li {
+    color: #3c4043;
+    font-size: 15px;
+  }
+  .section ul {
+    list-style: disc;
+    padding-left: 24px;
+  }
+  .section li {
+    margin-bottom: 6px;
+  }
+  a {
+    color: #1a73e8;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  .paper-coauthor {
+    font-size: 14px;
+    color: #5f6368;
+  }
+
+  /* ── Footer ── */
+  footer {
+    text-align: center;
+    padding: 24px 48px;
+    color: #9aa0a6;
+    font-size: 13px;
+    border-top: 1px solid #e0e0e0;
+    margin-top: 60px;
+  }
+
+  /* ── Mobile ── */
+  @media (max-width: 768px) {
+    nav { padding: 14px 20px; }
+    nav .nav-links { gap: 20px; }
+    nav .nav-links a { font-size: 14px; }
+    .container { padding: 32px 20px; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="site-name">Keisuke Ito</a>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="research.html">Research</a>
+    <a href="files/cv.pdf">CV</a>
+    <a href="teaching.html">Teaching</a>
+    <a href="ja.html" class="active">日本語</a>
+  </div>
+</nav>
+
+<div class="container">
+
+  <!-- ← CHANGE: Replace ○○ with your actual kanji first name -->
+  <div class="page-title">伊東　慧介</div>
+
+  <!-- ── About ── -->
+  <div class="section">
+    <div class="section-title">所属</div>
+    <p>シカゴ大学 ハリス公共政策大学院 博士課程</p>
+  </div>
+
+  <div class="section">
+    <div class="section-title">専門分野</div>
+    <ul>
+      <li>エネルギー・環境経済学</li>
+      <li>産業組織論</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <div class="section-title">略歴</div>
+    <ul>
+      <li>2022年〜　シカゴ大学 ハリス公共政策大学院 博士課程</li>
+      <li>2020〜2022年　シカゴ大学 エネルギー政策研究所（EPIC） プレドク（伊藤公一朗教授のリサーチアシスタント）</li>
+      <!-- ← CHANGE: Add your department at Tohoku -->
+      <li>2015〜2020年　東北大学 学士</li>
+      <li>2018〜2019年　カリフォルニア大学バークレー校 交換留学</li>
+    </ul>
+  </div>
+
+  <!-- ── Research ── -->
+  <div class="section">
+    <div class="section-title">研究</div>
+
+    <p style="font-weight:500; margin-bottom:10px;">ワーキングペーパー</p>
+    <ul>
+      <li>
+        "The Competitive Effects of Vertical Integration Under Incomplete Hedging"
+        <span class="paper-coauthor">（Ali Hortaçsu, Eric Richertとの共著, 2026年）</span>
+      </li>
+    </ul>
+
+    <p style="font-weight:500; margin-top:20px; margin-bottom:10px;">進行中の研究</p>
+    <ul>
+      <li>"Do Emission Markets Reallocate Production Efficiently?"</li>
+      <li>"Market Power and Merger Effects in Multi-Unit Auctions: Evidence from the Electricity Market"
+        <span class="paper-coauthor">（Ali Hortaçsu, Eric Richertとの共著）</span>
+      </li>
+      <li>"Data Center Entry, Location Choices, and Electricity Market Interactions"
+        <span class="paper-coauthor">（Ali Hortaçsu, Eric Richertとの共著）</span>
+      </li>
+      <li>"Algorithmic Bidding and Competition in Electricity Markets"
+        <span class="paper-coauthor">（Eric Richert, Richard Chenとの共著）</span>
+      </li>
+    </ul>
+  </div>
+
+  <!-- ── CV ── -->
+  <div class="section">
+    <div class="section-title">CV</div>
+    <p><a href="files/cv.pdf">英文履歴書（PDF）</a></p>
+  </div>
+
+  <!-- ── Contact ── -->
+  <div class="section">
+    <div class="section-title">連絡先</div>
+    <p><a href="mailto:keisukeito@uchicago.edu">keisukeito@uchicago.edu</a></p>
+  </div>
+
+</div>
+
+<footer>
+  &copy; 2026 Keisuke Ito
+</footer>
+
+</body>
+</html>
