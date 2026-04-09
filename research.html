@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Keisuke Ito - Research</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Google Sans', 'Segoe UI', Roboto, Arial, sans-serif;
+    color: #202124;
+    background: #fff;
+    line-height: 1.7;
+    font-size: 15px;
+  }
+
+  /* ── Navigation ── */
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 48px;
+    border-bottom: 1px solid #e0e0e0;
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  nav .site-name {
+    font-size: 22px;
+    font-weight: 400;
+    color: #202124;
+    text-decoration: none;
+  }
+  nav .nav-links { display: flex; gap: 32px; }
+  nav .nav-links a {
+    text-decoration: none;
+    color: #202124;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 4px 0;
+    transition: color 0.2s;
+  }
+  nav .nav-links a:hover { color: #1a73e8; }
+  nav .nav-links a.active {
+    color: #1a73e8;
+    border-bottom: 2px solid #1a73e8;
+  }
+
+  /* ── Main Content ── */
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px 48px;
+  }
+
+  /* ── Research Page ── */
+  .section-title {
+    font-size: 22px;
+    font-weight: 400;
+    color: #202124;
+    margin-bottom: 28px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  .paper {
+    margin-bottom: 36px;
+  }
+  .paper-title {
+    font-size: 15px;
+    font-weight: 500;
+    color: #202124;
+    margin-bottom: 6px;
+  }
+  .paper-title a {
+    color: #1a73e8;
+    text-decoration: none;
+    font-weight: 400;
+  }
+  .paper-title a:hover {
+    text-decoration: underline;
+  }
+  .paper-venue {
+    font-size: 14px;
+    color: #5f6368;
+    margin-bottom: 10px;
+    font-style: italic;
+  }
+  .paper-abstract {
+    color: #3c4043;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-top: 8px;
+  }
+  .section-gap {
+    margin-top: 52px;
+  }
+
+  /* ── Footer ── */
+  footer {
+    text-align: center;
+    padding: 24px 48px;
+    color: #9aa0a6;
+    font-size: 13px;
+    border-top: 1px solid #e0e0e0;
+    margin-top: 60px;
+  }
+
+  /* ── Mobile ── */
+  @media (max-width: 768px) {
+    nav { padding: 14px 20px; }
+    nav .nav-links { gap: 20px; }
+    nav .nav-links a { font-size: 14px; }
+    .container { padding: 32px 20px; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="site-name">Keisuke Ito</a>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="research.html" class="active">Research</a>
+    <a href="files/cv.pdf">CV</a>
+  </div>
+</nav>
+
+<div class="container">
+
+  <!-- ── Working Papers ── -->
+  <div class="section-title">Working Papers</div>
+
+  <div class="paper">
+    <div class="paper-title">
+      Your Paper Title Here (with Co-Author Name).
+      <a href="files/your_paper.pdf">[Draft]</a>
+    </div>
+    <div class="paper-abstract">
+      Paste your abstract here. This section will display your abstract text
+      in the same clean style as Agata's website. Replace this placeholder
+      with your actual abstract.
+    </div>
+  </div>
+
+  <div class="paper">
+    <div class="paper-title">
+      Another Paper Title Here.
+      <a href="files/another_paper.pdf">[Draft]</a>
+    </div>
+    <div class="paper-abstract">
+      Paste your second abstract here. You can add as many papers as you want
+      by copying this block and changing the title, link, and abstract text.
+    </div>
+  </div>
+
+  <!-- ── Work in Progress ── -->
+  <div class="section-title section-gap">Work in Progress</div>
+
+  <div class="paper">
+    <div class="paper-title">
+      Work in Progress Title (with Co-Author Name).
+    </div>
+    <div class="paper-abstract">
+      A brief description of this project goes here.
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  &copy; 2026 Keisuke Ito
+</footer>
+
+</body>
+</html>
